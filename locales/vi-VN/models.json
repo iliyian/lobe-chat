@@ -65,6 +65,9 @@
   "DeepSeek-R1-Distill-Qwen-7B": {
     "description": "Mô hình chưng cất DeepSeek-R1 dựa trên Qwen2.5-Math-7B, tối ưu hóa hiệu suất suy luận thông qua học tăng cường và dữ liệu khởi động lạnh, mô hình mã nguồn mở làm mới tiêu chuẩn đa nhiệm."
   },
+  "Doubao-1.5-vision-pro-32k": {
+    "description": "Doubao-1.5-vision-pro là mô hình lớn đa phương thức được nâng cấp hoàn toàn, hỗ trợ nhận diện hình ảnh với bất kỳ độ phân giải nào và tỷ lệ dài rộng cực đoan, tăng cường khả năng suy luận thị giác, nhận diện tài liệu, hiểu thông tin chi tiết và tuân thủ chỉ dẫn."
+  },
   "Doubao-lite-128k": {
     "description": "Doubao-lite có tốc độ phản hồi cực nhanh, giá trị tốt hơn, cung cấp sự lựa chọn linh hoạt cho khách hàng trong nhiều tình huống khác nhau. Hỗ trợ suy diễn và tinh chỉnh trong ngữ cảnh 128k."
   },
@@ -77,11 +80,20 @@
   "Doubao-pro-128k": {
     "description": "Mô hình chính có hiệu quả tốt nhất, phù hợp để xử lý các nhiệm vụ phức tạp, có hiệu quả tốt trong các tình huống như hỏi đáp tham khảo, tóm tắt, sáng tác, phân loại văn bản, và nhập vai. Hỗ trợ suy diễn và tinh chỉnh trong ngữ cảnh 128k."
   },
+  "Doubao-pro-256k": {
+    "description": "Mô hình chủ lực có hiệu quả tốt nhất, phù hợp để xử lý các nhiệm vụ phức tạp, có hiệu quả tốt trong các tình huống như hỏi đáp tham khảo, tóm tắt, sáng tác, phân loại văn bản, và nhập vai. Hỗ trợ suy luận và tinh chỉnh với cửa sổ ngữ cảnh 256k."
+  },
   "Doubao-pro-32k": {
     "description": "Mô hình chính có hiệu quả tốt nhất, phù hợp để xử lý các nhiệm vụ phức tạp, có hiệu quả tốt trong các tình huống như hỏi đáp tham khảo, tóm tắt, sáng tác, phân loại văn bản, và nhập vai. Hỗ trợ suy diễn và tinh chỉnh trong ngữ cảnh 32k."
   },
   "Doubao-pro-4k": {
     "description": "Mô hình chính có hiệu quả tốt nhất, phù hợp để xử lý các nhiệm vụ phức tạp, có hiệu quả tốt trong các tình huống như hỏi đáp tham khảo, tóm tắt, sáng tác, phân loại văn bản, và nhập vai. Hỗ trợ suy diễn và tinh chỉnh trong ngữ cảnh 4k."
+  },
+  "Doubao-vision-lite-32k": {
+    "description": "Mô hình Doubao-vision là mô hình lớn đa phương thức do Doubao phát triển, có khả năng hiểu và suy luận hình ảnh mạnh mẽ, cũng như khả năng hiểu chỉ dẫn chính xác. Mô hình thể hiện hiệu suất mạnh mẽ trong việc trích xuất thông tin văn bản từ hình ảnh và các nhiệm vụ suy luận dựa trên hình ảnh, có thể áp dụng cho các nhiệm vụ hỏi đáp thị giác phức tạp và đa dạng hơn."
+  },
+  "Doubao-vision-pro-32k": {
+    "description": "Mô hình Doubao-vision là mô hình lớn đa phương thức do Doubao phát triển, có khả năng hiểu và suy luận hình ảnh mạnh mẽ, cũng như khả năng hiểu chỉ dẫn chính xác. Mô hình thể hiện hiệu suất mạnh mẽ trong việc trích xuất thông tin văn bản từ hình ảnh và các nhiệm vụ suy luận dựa trên hình ảnh, có thể áp dụng cho các nhiệm vụ hỏi đáp thị giác phức tạp và đa dạng hơn."
   },
   "ERNIE-3.5-128K": {
     "description": "Mô hình ngôn ngữ quy mô lớn hàng đầu do Baidu tự phát triển, bao phủ một lượng lớn tài liệu tiếng Trung và tiếng Anh, có khả năng tổng quát mạnh mẽ, có thể đáp ứng hầu hết các yêu cầu về đối thoại, hỏi đáp, sáng tạo nội dung và các tình huống ứng dụng plugin; hỗ trợ tự động kết nối với plugin tìm kiếm của Baidu, đảm bảo thông tin hỏi đáp luôn được cập nhật kịp thời."
@@ -370,9 +382,6 @@
   },
   "abab6.5t-chat": {
     "description": "Tối ưu hóa cho các tình huống đối thoại bằng tiếng Trung, cung cấp khả năng sinh đối thoại mượt mà và phù hợp với thói quen diễn đạt tiếng Trung."
-  },
-  "abab7-chat-preview": {
-    "description": "So với các mô hình trong series abab6.5, khả năng xử lý văn bản dài, toán học, viết lách, v.v. đã được cải thiện đáng kể."
   },
   "accounts/fireworks/models/deepseek-r1": {
     "description": "DeepSeek-R1 là một mô hình ngôn ngữ lớn tiên tiến, được tối ưu hóa thông qua học tăng cường và dữ liệu khởi động lạnh, có hiệu suất suy luận, toán học và lập trình xuất sắc."
@@ -668,6 +677,15 @@
   "deepseek/deepseek-r1:free": {
     "description": "DeepSeek-R1 đã nâng cao khả năng suy luận của mô hình một cách đáng kể với rất ít dữ liệu được gán nhãn. Trước khi đưa ra câu trả lời cuối cùng, mô hình sẽ xuất ra một chuỗi suy nghĩ để nâng cao độ chính xác của câu trả lời cuối cùng."
   },
+  "doubao-1.5-lite-32k": {
+    "description": "Doubao-1.5-lite là mô hình phiên bản nhẹ thế hệ mới, tốc độ phản hồi cực nhanh, hiệu quả và độ trễ đạt tiêu chuẩn hàng đầu thế giới."
+  },
+  "doubao-1.5-pro-256k": {
+    "description": "Doubao-1.5-pro-256k là phiên bản nâng cấp toàn diện dựa trên Doubao-1.5-Pro, hiệu quả tổng thể tăng 10%. Hỗ trợ suy luận với cửa sổ ngữ cảnh 256k, độ dài đầu ra tối đa lên đến 12k tokens. Hiệu suất cao hơn, cửa sổ lớn hơn, giá trị vượt trội, phù hợp với nhiều ứng dụng khác nhau."
+  },
+  "doubao-1.5-pro-32k": {
+    "description": "Doubao-1.5-pro là mô hình chủ lực thế hệ mới, hiệu suất được nâng cấp toàn diện, thể hiện xuất sắc trong các lĩnh vực kiến thức, mã nguồn, suy luận, và nhiều hơn nữa."
+  },
   "emohaa": {
     "description": "Emohaa là mô hình tâm lý, có khả năng tư vấn chuyên nghiệp, giúp người dùng hiểu các vấn đề cảm xúc."
   },
@@ -728,6 +746,9 @@
   "gemini-1.0-pro-latest": {
     "description": "Gemini 1.0 Pro là mô hình AI hiệu suất cao của Google, được thiết kế để mở rộng cho nhiều nhiệm vụ."
   },
+  "gemini-1.5-flash": {
+    "description": "Gemini 1.5 Flash là mô hình AI đa phương thức mới nhất của Google, có khả năng xử lý nhanh, hỗ trợ đầu vào văn bản, hình ảnh và video, phù hợp cho việc mở rộng hiệu quả cho nhiều nhiệm vụ."
+  },
   "gemini-1.5-flash-001": {
     "description": "Gemini 1.5 Flash 001 là một mô hình đa phương thức hiệu quả, hỗ trợ mở rộng cho nhiều ứng dụng."
   },
@@ -767,23 +788,14 @@
   "gemini-2.0-flash-001": {
     "description": "Gemini 2.0 Flash cung cấp các tính năng và cải tiến thế hệ tiếp theo, bao gồm tốc độ vượt trội, sử dụng công cụ bản địa, tạo đa phương tiện và cửa sổ ngữ cảnh 1M token."
   },
-  "gemini-2.0-flash-exp": {
-    "description": "Gemini 2.0 Flash Exp là mô hình AI đa phương thức thử nghiệm mới nhất của Google, có các tính năng thế hệ tiếp theo, tốc độ vượt trội, khả năng gọi công cụ nguyên bản và tạo ra đa phương thức."
-  },
   "gemini-2.0-flash-lite-preview-02-05": {
     "description": "Một mô hình Gemini 2.0 Flash được tối ưu hóa cho hiệu quả chi phí và độ trễ thấp."
   },
   "gemini-2.0-flash-thinking-exp-01-21": {
     "description": "Gemini 2.0 Flash Exp là mô hình AI đa phương thức thử nghiệm mới nhất của Google, sở hữu các tính năng thế hệ tiếp theo, tốc độ vượt trội, gọi công cụ bản địa và sinh ra đa phương thức."
   },
-  "gemini-2.0-flash-thinking-exp-1219": {
-    "description": "Gemini 2.0 Flash Exp là mô hình AI đa phương thức thử nghiệm mới nhất của Google, với các tính năng thế hệ tiếp theo, tốc độ vượt trội, gọi công cụ bản địa và tạo ra đa phương thức."
-  },
   "gemini-2.0-pro-exp-02-05": {
     "description": "Gemini 2.0 Pro Experimental là mô hình AI đa phương tiện thử nghiệm mới nhất của Google, có sự cải thiện chất lượng nhất định so với các phiên bản trước, đặc biệt là về kiến thức thế giới, mã và ngữ cảnh dài."
-  },
-  "gemini-exp-1206": {
-    "description": "Gemini Exp 1206 là mô hình AI đa phương tiện thử nghiệm mới nhất của Google, có sự cải thiện về chất lượng so với các phiên bản trước."
   },
   "gemma-7b-it": {
     "description": "Gemma 7B phù hợp cho việc xử lý các nhiệm vụ quy mô vừa và nhỏ, đồng thời mang lại hiệu quả chi phí."
@@ -1042,6 +1054,9 @@
   },
   "jina-deepsearch-v1": {
     "description": "Tìm kiếm sâu kết hợp tìm kiếm trên mạng, đọc và suy luận, có thể thực hiện điều tra toàn diện. Bạn có thể coi nó như một đại lý, nhận nhiệm vụ nghiên cứu của bạn - nó sẽ thực hiện tìm kiếm rộng rãi và qua nhiều lần lặp lại trước khi đưa ra câu trả lời. Quá trình này liên quan đến nghiên cứu liên tục, suy luận và giải quyết vấn đề từ nhiều góc độ. Điều này khác biệt hoàn toàn với việc tạo ra câu trả lời trực tiếp từ dữ liệu đã được huấn luyện trước của các mô hình lớn tiêu chuẩn và các hệ thống RAG truyền thống dựa vào tìm kiếm bề mặt một lần."
+  },
+  "kimi-latest": {
+    "description": "Sản phẩm trợ lý thông minh Kimi sử dụng mô hình lớn Kimi mới nhất, có thể chứa các tính năng chưa ổn định. Hỗ trợ hiểu hình ảnh, đồng thời tự động chọn mô hình 8k/32k/128k làm mô hình tính phí dựa trên độ dài ngữ cảnh yêu cầu."
   },
   "learnlm-1.5-pro-experimental": {
     "description": "LearnLM là một mô hình ngôn ngữ thử nghiệm, chuyên biệt cho các nhiệm vụ, được đào tạo để tuân theo các nguyên tắc khoa học học tập, có thể tuân theo các chỉ dẫn hệ thống trong các tình huống giảng dạy và học tập, đóng vai trò như một người hướng dẫn chuyên gia."
@@ -1358,6 +1373,9 @@
   "moonshot-v1-8k-vision-preview": {
     "description": "Mô hình hình ảnh Kimi (bao gồm moonshot-v1-8k-vision-preview/moonshot-v1-32k-vision-preview/moonshot-v1-128k-vision-preview, v.v.) có khả năng hiểu nội dung hình ảnh, bao gồm văn bản hình ảnh, màu sắc hình ảnh và hình dạng vật thể."
   },
+  "moonshot-v1-auto": {
+    "description": "Moonshot V1 Auto có thể chọn mô hình phù hợp dựa trên số lượng Tokens hiện tại đang chiếm dụng trong ngữ cảnh."
+  },
   "nousresearch/hermes-2-pro-llama-3-8b": {
     "description": "Hermes 2 Pro Llama 3 8B là phiên bản nâng cấp của Nous Hermes 2, bao gồm bộ dữ liệu phát triển nội bộ mới nhất."
   },
@@ -1579,6 +1597,9 @@
   },
   "sonar-reasoning": {
     "description": "Sản phẩm API mới được hỗ trợ bởi mô hình suy luận của DeepSeek."
+  },
+  "sonar-reasoning-pro": {
+    "description": "Sản phẩm API mới được hỗ trợ bởi mô hình suy diễn DeepSeek."
   },
   "step-1-128k": {
     "description": "Cân bằng hiệu suất và chi phí, phù hợp cho các tình huống chung."

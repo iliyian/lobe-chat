@@ -10,6 +10,7 @@ import {
   MessageToolCallChunk,
   MessageToolCallSchema,
 } from '@/types/message';
+import { GroundingSearch } from '@/types/search';
 
 import { fetchEventSource } from './fetchEventSource';
 import { getMessageError } from './parseError';
@@ -20,6 +21,7 @@ type SSEFinishType = 'done' | 'error' | 'abort';
 export type OnFinishHandler = (
   text: string,
   context: {
+    grounding?: GroundingSearch;
     observationId?: string | null;
     reasoning?: string;
     toolCalls?: MessageToolCall[];
@@ -38,6 +40,11 @@ export interface MessageReasoningChunk {
   type: 'reasoning';
 }
 
+export interface MessageGroundingChunk {
+  grounding: GroundingSearch;
+  type: 'grounding';
+}
+
 interface MessageToolCallsChunk {
   isAnimationActives?: boolean[];
   tool_calls: MessageToolCall[];
@@ -50,7 +57,7 @@ export interface FetchSSEOptions {
   onErrorHandle?: (error: ChatMessageError) => void;
   onFinish?: OnFinishHandler;
   onMessageHandle?: (
-    chunk: MessageTextChunk | MessageToolCallsChunk | MessageReasoningChunk,
+    chunk: MessageTextChunk | MessageToolCallsChunk | MessageReasoningChunk | MessageGroundingChunk,
   ) => void;
   smoothing?: SmoothingParams | boolean;
 }
@@ -279,6 +286,7 @@ export const fetchSSE = async (url: string, options: RequestInit & FetchSSEOptio
     startSpeed: smoothingSpeed,
   });
 
+  let grounding: GroundingSearch | undefined = undefined;
   await fetchEventSource(url, {
     body: options.body,
     fetch: options?.fetcher,
@@ -350,6 +358,13 @@ export const fetchSSE = async (url: string, options: RequestInit & FetchSSEOptio
 
           break;
         }
+
+        case 'grounding': {
+          grounding = data;
+          options.onMessageHandle?.({ grounding: data, type: 'grounding' });
+          break;
+        }
+
         case 'reasoning': {
           if (textSmoothing) {
             thinkingController.pushToQueue(data);
@@ -419,6 +434,7 @@ export const fetchSSE = async (url: string, options: RequestInit & FetchSSEOptio
       }
 
       await options?.onFinish?.(output, {
+        grounding,
         observationId,
         reasoning: !!thinking ? thinking : undefined,
         toolCalls,

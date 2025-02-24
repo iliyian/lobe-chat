@@ -65,6 +65,9 @@
   "DeepSeek-R1-Distill-Qwen-7B": {
     "description": "基於 Qwen2.5-Math-7B 的 DeepSeek-R1 蒸餾模型，通過強化學習與冷啟動數據優化推理性能，開源模型刷新多任務標杆。"
   },
+  "Doubao-1.5-vision-pro-32k": {
+    "description": "Doubao-1.5-vision-pro 全新升級的多模態大模型，支持任意解析度和極端長寬比圖像識別，增強視覺推理、文檔識別、細節信息理解和指令遵循能力。"
+  },
   "Doubao-lite-128k": {
     "description": "Doubao-lite 擁有極致的回應速度，更好的性價比，為客戶不同場景提供更靈活的選擇。支持 128k 上下文窗口的推理和精調。"
   },
@@ -77,11 +80,20 @@
   "Doubao-pro-128k": {
     "description": "效果最好的主力模型，適合處理複雜任務，在參考問答、總結摘要、創作、文本分類、角色扮演等場景都有很好的效果。支持 128k 上下文窗口的推理和精調。"
   },
+  "Doubao-pro-256k": {
+    "description": "效果最好的主力模型，適合處理複雜任務，在參考問答、總結摘要、創作、文本分類、角色扮演等場景都有很好的效果。支持 256k 上下文窗口的推理和精調。"
+  },
   "Doubao-pro-32k": {
     "description": "效果最好的主力模型，適合處理複雜任務，在參考問答、總結摘要、創作、文本分類、角色扮演等場景都有很好的效果。支持 32k 上下文窗口的推理和精調。"
   },
   "Doubao-pro-4k": {
     "description": "效果最好的主力模型，適合處理複雜任務，在參考問答、總結摘要、創作、文本分類、角色扮演等場景都有很好的效果。支持 4k 上下文窗口的推理和精調。"
+  },
+  "Doubao-vision-lite-32k": {
+    "description": "Doubao-vision 模型是豆包推出的多模態大模型，具備強大的圖片理解與推理能力，以及精準的指令理解能力。模型在圖像文本信息抽取、基於圖像的推理任務上展現出強大的性能，能夠應用於更複雜、更廣泛的視覺問答任務。"
+  },
+  "Doubao-vision-pro-32k": {
+    "description": "Doubao-vision 模型是豆包推出的多模態大模型，具備強大的圖片理解與推理能力，以及精準的指令理解能力。模型在圖像文本信息抽取、基於圖像的推理任務上展現出強大的性能，能夠應用於更複雜、更廣泛的視覺問答任務。"
   },
   "ERNIE-3.5-128K": {
     "description": "百度自研的旗艦級大規模語言模型，覆蓋海量中英文語料，具有強大的通用能力，可滿足絕大部分對話問答、創作生成、插件應用場景要求；支持自動對接百度搜索插件，保障問答信息時效。"
@@ -370,9 +382,6 @@
   },
   "abab6.5t-chat": {
     "description": "針對中文人設對話場景優化，提供流暢且符合中文表達習慣的對話生成能力。"
-  },
-  "abab7-chat-preview": {
-    "description": "相對於abab6.5系列模型在長文、數學、寫作等能力有大幅度提升。"
   },
   "accounts/fireworks/models/deepseek-r1": {
     "description": "DeepSeek-R1 是一款最先進的大型語言模型，經過強化學習和冷啟動數據的優化，具有出色的推理、數學和編程性能。"
@@ -668,6 +677,15 @@
   "deepseek/deepseek-r1:free": {
     "description": "DeepSeek-R1 在僅有極少標註數據的情況下，極大提升了模型推理能力。在輸出最終回答之前，模型會先輸出一段思維鏈內容，以提升最終答案的準確性。"
   },
+  "doubao-1.5-lite-32k": {
+    "description": "Doubao-1.5-lite 全新一代輕量版模型，極致響應速度，效果與時延均達到全球一流水平。"
+  },
+  "doubao-1.5-pro-256k": {
+    "description": "Doubao-1.5-pro-256k 基於 Doubao-1.5-Pro 全面升級版，整體效果大幅提升 10%。支持 256k 上下文窗口的推理，輸出長度支持最大 12k tokens。更高性能、更大窗口、超高性價比，適用於更廣泛的應用場景。"
+  },
+  "doubao-1.5-pro-32k": {
+    "description": "Doubao-1.5-pro 全新一代主力模型，性能全面升級，在知識、程式碼、推理等方面表現卓越。"
+  },
   "emohaa": {
     "description": "Emohaa是一個心理模型，具備專業諮詢能力，幫助用戶理解情感問題。"
   },
@@ -728,6 +746,9 @@
   "gemini-1.0-pro-latest": {
     "description": "Gemini 1.0 Pro 是 Google 的高性能 AI 模型，專為廣泛任務擴展而設計。"
   },
+  "gemini-1.5-flash": {
+    "description": "Gemini 1.5 Flash 是 Google 最新的多模態 AI 模型，具備快速處理能力，支持文本、圖像和視頻輸入，適用於多種任務的高效擴展。"
+  },
   "gemini-1.5-flash-001": {
     "description": "Gemini 1.5 Flash 001 是一款高效的多模態模型，支持廣泛應用的擴展。"
   },
@@ -767,23 +788,14 @@
   "gemini-2.0-flash-001": {
     "description": "Gemini 2.0 Flash 提供下一代功能和改進，包括卓越的速度、原生工具使用、多模態生成和1M令牌上下文窗口。"
   },
-  "gemini-2.0-flash-exp": {
-    "description": "Gemini 2.0 Flash Exp 是 Google 最新的實驗性多模態AI模型，擁有下一代特性，卓越的速度，原生工具調用以及多模態生成。"
-  },
   "gemini-2.0-flash-lite-preview-02-05": {
     "description": "一個 Gemini 2.0 Flash 模型，針對成本效益和低延遲等目標進行了優化。"
   },
   "gemini-2.0-flash-thinking-exp-01-21": {
     "description": "Gemini 2.0 Flash Exp 是 Google 最新的實驗性多模態AI模型，擁有下一代特性，卓越的速度，原生工具調用以及多模態生成。"
   },
-  "gemini-2.0-flash-thinking-exp-1219": {
-    "description": "Gemini 2.0 Flash Exp 是 Google 最新的實驗性多模態AI模型，擁有下一代特性，卓越的速度，原生工具調用以及多模態生成。"
-  },
   "gemini-2.0-pro-exp-02-05": {
     "description": "Gemini 2.0 Pro Experimental 是 Google 最新的實驗性多模態AI模型，與歷史版本相比有一定的質量提升，特別是對於世界知識、代碼和長上下文。"
-  },
-  "gemini-exp-1206": {
-    "description": "Gemini Exp 1206 是 Google 最新的實驗性多模態 AI 模型，與歷史版本相比有一定的質量提升。"
   },
   "gemma-7b-it": {
     "description": "Gemma 7B 適合中小規模任務處理，兼具成本效益。"
@@ -1042,6 +1054,9 @@
   },
   "jina-deepsearch-v1": {
     "description": "深度搜索結合了網路搜索、閱讀和推理，可進行全面調查。您可以將其視為一個代理，接受您的研究任務 - 它會進行廣泛搜索並經過多次迭代，然後才能給出答案。這個過程涉及持續的研究、推理和從各個角度解決問題。這與直接從預訓練數據生成答案的標準大模型以及依賴一次性表面搜索的傳統 RAG 系統有著根本的不同。"
+  },
+  "kimi-latest": {
+    "description": "Kimi 智能助手產品使用最新的 Kimi 大模型，可能包含尚未穩定的特性。支持圖片理解，同時會自動根據請求的上下文長度選擇 8k/32k/128k 模型作為計費模型"
   },
   "learnlm-1.5-pro-experimental": {
     "description": "LearnLM 是一個實驗性的、特定於任務的語言模型，經過訓練以符合學習科學原則，可在教學和學習場景中遵循系統指令，充當專家導師等。"
@@ -1358,6 +1373,9 @@
   "moonshot-v1-8k-vision-preview": {
     "description": "Kimi 視覺模型（包括 moonshot-v1-8k-vision-preview/moonshot-v1-32k-vision-preview/moonshot-v1-128k-vision-preview 等）能夠理解圖片內容，包括圖片文字、圖片顏色和物體形狀等內容。"
   },
+  "moonshot-v1-auto": {
+    "description": "Moonshot V1 Auto 可以根據當前上下文佔用的 Tokens 數量來選擇合適的模型"
+  },
   "nousresearch/hermes-2-pro-llama-3-8b": {
     "description": "Hermes 2 Pro Llama 3 8B 是 Nous Hermes 2 的升級版本，包含最新的內部開發的數據集。"
   },
@@ -1579,6 +1597,9 @@
   },
   "sonar-reasoning": {
     "description": "由 DeepSeek 推理模型提供支持的新 API 產品。"
+  },
+  "sonar-reasoning-pro": {
+    "description": "由 DeepSeek 推理模型提供支援的新 API 產品。"
   },
   "step-1-128k": {
     "description": "平衡性能與成本，適合一般場景。"
